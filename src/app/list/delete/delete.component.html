@@ -1,0 +1,11 @@
+<h3>Delete City</h3>
+<form #cityDeleteForm="ngForm" (ngSubmit)="delete(cityDeleteForm)">
+    <div class="form-group">
+        <label for="id">ID : </label>
+        <input type="text" placeholder="id" #id="ngModel"
+        [(ngModel)]="model.id" class="form-control" name="id" id="id">
+      </div>
+  
+
+  <button type="submit" class="btn btn-primary">Delete</button>
+</form>

@@ -1,0 +1,30 @@
+<h3>City Update</h3>
+<form #cityUpdateForm="ngForm" (ngSubmit)="update(cityUpdateForm)">
+    <div class="form-group">
+        <label for="id">ID : </label>
+        <input type="text" placeholder="id" #id="ngModel"
+        [(ngModel)]="model.id" class="form-control" name="id" id="id">
+      </div>
+    <div class="form-group">
+    <label for="name">City Name : </label>
+    <input type="text" placeholder="CityName" #name="ngModel"
+    [(ngModel)]="model.name" class="form-control" name="name" id="name">
+  </div>
+  <div class="form-group">
+    <label for="countryCode">Country Code : </label>
+    <input type="text" placeholder="CountryCode" #countryCode="ngModel"
+    [(ngModel)]="model.countryCode" class="form-control" name="countryCode" id="countryCode">
+  </div>
+  <div class="form-group">
+    <label for="district">District : </label>
+    <input type="text" placeholder="District" #district="ngModel"
+    [(ngModel)]="model.district" class="form-control" name="district" id="district">
+  </div>
+  <div class="form-group">
+    <label for="population">Population : </label>
+    <input type="text" placeholder="Population" #population="ngModel"
+    [(ngModel)]="model.population" class="form-control" name="population" id="population">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>
